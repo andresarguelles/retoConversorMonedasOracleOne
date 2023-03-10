@@ -1,7 +1,11 @@
+import java.util.Scanner;
 
 public class GraphicInterface {
 	public static void main(String[] args) {
-		System.out.println("Hola mundo");
-		System.out.println("que haciendo?");
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("A continuación ingresa un numero: ");
+		int numero = scanner.nextInt();
+		scanner.close();
+		System.out.println("El numero ingresado es: " + numero);
 	}
 }
