@@ -26,6 +26,8 @@ public class TestDivisas {
 			
 			repetir = JOptionPane.showConfirmDialog(null, "¿Desea continuar dentro de la app?", nombreDeApp, JOptionPane.INFORMATION_MESSAGE, 0);
 		}while(repetir ==0);
+		
+		JOptionPane.showMessageDialog(null, "Programa finalizado", nombreDeApp, JOptionPane.INFORMATION_MESSAGE, null);
 	}
 
 	public static void conversorDeMonedas() {
