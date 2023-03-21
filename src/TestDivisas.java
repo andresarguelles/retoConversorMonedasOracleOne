@@ -9,7 +9,7 @@ public class TestDivisas {
 	public static void main(String[] args) {
 
 		String opciones[] = { "Conversor de Monedas", "Conversor de Temperatura" };
-
+		int repetir=0;
 		do {
 		String opcionSeleccionada = (String) JOptionPane.showInputDialog(null, "Elige Conversor", nombreDeApp,
 				JOptionPane.QUESTION_MESSAGE, null, opciones, opciones[0]);
@@ -23,7 +23,9 @@ public class TestDivisas {
 				conversorTemperatura();
 				break;
 			}
-		}while(true);
+			
+			repetir = JOptionPane.showConfirmDialog(null, "¿Desea continuar dentro de la app?", nombreDeApp, JOptionPane.INFORMATION_MESSAGE, 0);
+		}while(repetir ==0);
 	}
 
 	public static void conversorDeMonedas() {
@@ -34,7 +36,7 @@ public class TestDivisas {
 		divisas.put(opciones[0], 1.00);
 		divisas.put(opciones[1], 0.053);
 		divisas.put(opciones[2], 0.050);
-		divisas.put(opciones[3], 0.043);
+		divisas.put(opciones[3], 0.043); //Libra Esterlina
 		divisas.put(opciones[4], 6.98);
 		divisas.put(opciones[5], 69.36);
 		
